@@ -1,0 +1,229 @@
+/* IMPORT FONT LATO */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900,900i');
+
+/* START GENERAL */
+h1, h2, h3, h4, h5, h6, p, span, a, li {
+  font-family: 'Lato', sans-serif;
+}
+
+.py-15{
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.py-40{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.pt-30{
+  padding-top:30px;
+}
+
+.pt-15{
+  padding-top:15px;
+}
+
+.px-15{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pl-15{
+  padding-left: 15px;
+}
+
+.pr-15{
+  padding-right: 15px;
+}
+
+
+
+.mt-40{
+  margin-top: 40px;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
+hr{
+  border-top: 2px solid #000;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.drak-brown{
+  color:#515151;
+}
+
+/* END GENERAL */
+
+/* START HEADER */
+.navbar-nav > li > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.navbar-nav > li{
+  color: #fff;
+  font-size: 18px;
+}
+
+.navbar-nav > li > a:hover, .nav > li > a:focus {
+  text-decoration:none;
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: #0D00CA;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.active{
+  text-decoration: underline;
+}
+
+.cart-number{
+  padding: 2px 18px;
+  background: #fff;
+  color: #0D00CA;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.product-container{
+  border: 2px solid #D5C9C9;
+  box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding-bottom: 30px;
+}
+
+/* END HEADER */
+
+/* START TITLE */
+
+.shop-title{
+  font-family: "Lato", "Adobe Blank";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 34px;
+}
+
+/* END TITLE */
+
+/* START BUTTON */
+
+.custom-btn{
+  border: 1px solid #BDBDBD;
+  font-size: 21px;
+  font-weight: 300;
+  padding: 6px 28px;
+  text-align: center;
+  cursor:pointer;
+  user-select: none;
+  border-radius: 4px;
+}
+
+/* END BUTTON */
+
+/* START PRODUCT GRID */
+
+.product-name{
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.product-price{
+  font-weight:300;
+  font-size: 26px;
+}
+
+/* END PRODUCT GRID */
+
+/* START CART SCREEN */
+.table-display{
+  display:table;
+}
+
+.table-cell{
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.cart-cover{
+  background: rgba(255,255,255,0.85);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.cart-cover:before{
+  content:'';
+  position: fixed;
+  z-index:-1;
+  top:0;
+  background: rgba(255,255,255,0.5);
+  box-shadow: inset 0 0 3000px rgba(255,255,255,0.5);
+  filter: blur(10px);
+  margin:-20px;
+}
+
+.cart-detail-container{
+  width:30%;
+  margin:0 auto;
+}
+
+.cart-image{
+  border: 1px solid;
+}
+
+.cart-name{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 15px
+}
+
+.cart-price{
+  font-weight:400;
+  font-size: 26px;
+}
+
+.delete-icon{
+  font-size: 11px;
+  color: white;
+  background: #D1D1D1;
+  border-radius: 50%;
+  padding: 2px;
+  width: 13px;
+  height: 13px;
+  line-height: 9px;
+}
+
+.delete-icon-wrapper{
+  margin-left: 5px;
+  margin-top: 9px;
+}
+
+/* END CART SCREEN */
