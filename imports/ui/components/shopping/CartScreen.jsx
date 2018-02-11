@@ -21,7 +21,7 @@ export default class CartScreen extends Component {
     })
 
     return(
-      <div className="cart-cover table-display py-40 mt-50">
+      <div id="cart-screen" className="cart-cover table-display py-40 mt-50">
         <div className="table-cell">
           <div className="cart-detail-container">
               <h1 className="text-center bold drak-brown">Your Cart</h1>

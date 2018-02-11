@@ -85,8 +85,11 @@ export default class ShoppingPage extends Component {
     if(this.state.showCart){
       this.setState({showCart: false});
       $('.blur').css({'filter':"none"});
+      $("#shop-header").addClass("active");
     }
     else{
+      $('html, body').animate({scrollTop: 0}, 'slow');
+      $("#shop-header").removeClass("active");
       this.setState({showCart: true});
       $('.blur').css({'filter':'blur(10px)'});
     }
@@ -98,6 +101,7 @@ export default class ShoppingPage extends Component {
   backToShopping(){
     this.setState({showCart:false});
     $('.blur').css({'filter':"none"});
+    $("#shop-header").addClass("active");
   }
 
   /**
@@ -156,7 +160,7 @@ export default class ShoppingPage extends Component {
       )
     })
     return(
-      <div>
+      <div id="shop-body">
         <Header cartToggle={this.cartToggle} cartNumber={this.state.cartNumber}/>
         <div style={{marginTop:"50px"}}>
           <div className="product-list">
@@ -174,9 +178,6 @@ export default class ShoppingPage extends Component {
             : null}
         </div>
       </div>
-
-
     )
-
   }
 }
